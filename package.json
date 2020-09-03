@@ -1,0 +1,25 @@
+{
+  "name": "db_migration_tool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Node.js script for upgrading user configuration objects to v2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sc2pte/db_migration_tool.git"
+  },
+  "author": "Łukasz Wójcik",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/sc2pte/db_migration_tool/issues"
+  },
+  "homepage": "https://github.com/sc2pte/db_migration_tool#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.10.2",
+    "starcraft2-api": "^1.3.8"
+  }
+}
