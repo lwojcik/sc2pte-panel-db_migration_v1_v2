@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const { Schema, model } = mongoose;
+const { Schema } = mongoose;
 
-const ChannelConfigSchema = new Schema({
+const LegacyChannelConfigSchema = new Schema({
   channelId: {
     type: Number,
     required: [true, 'channelId required'],
@@ -46,13 +46,4 @@ const ChannelConfigSchema = new Schema({
   timestamps: true,
 });
 
-ChannelConfigSchema.pre('save', (next) => {
-  const now = new Date();
-  this.updatedAt = now;
-  if (!this.created_at) {
-    this.createdAt = now;
-  }
-  next();
-});
-
-module.exports = model('ChannelConfig', ChannelConfigSchema);
+module.exports = LegacyChannelConfigSchema;

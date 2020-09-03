@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-import StarCraft2API from 'starcraft2-api';
+const StarCraft2API = require('starcraft2-api');
 
-const { Schema, model } = mongoose;
+const { Schema } = mongoose;
 
 const regionIds = StarCraft2API.getAllRegionIds().map(regionId => regionId.toString());
 const realmIds = StarCraft2API.getAllAvailableSc2Realms().map(realmId => realmId.toString());
@@ -55,9 +55,4 @@ const ChannelConfigSchema =  new Schema({
   },
 });
 
-ChannelConfigSchema.pre('save', function (next) {
-  this.updatedAt = new Date();
-  next();
-});
-
-module.exports = model('ChannelConfig', ChannelConfigSchema);
+module.exports = ChannelConfigSchema;
