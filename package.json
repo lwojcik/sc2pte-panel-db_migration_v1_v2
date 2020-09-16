@@ -1,5 +1,5 @@
 {
-  "name": "db_migration_tool",
+  "name": "db_migration_v1_v2",
   "version": "1.0.0",
   "private": true,
   "description": "Node.js script for upgrading user configuration objects to v2.",
