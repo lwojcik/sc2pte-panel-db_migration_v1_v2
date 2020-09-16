@@ -2,12 +2,12 @@
 
 Node.js script for upgrading user configuration objects to version 2.
 
-# Requirements
+## Requirements
 
 * Node.js (latest LTS recommended)
 * two MongoDB document stores ready to be migrated :)
 
-# Usage
+## Usage
 
 * Clone and install:
 
