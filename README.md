@@ -1,6 +1,6 @@
-# db_migration_tool
+# db_migration_v1_v2
 
-Node.js script for upgrading user configuration objects to v2.
+Node.js script for upgrading user configuration objects to version 2.
 
 # Requirements
 
@@ -12,7 +12,7 @@ Node.js script for upgrading user configuration objects to v2.
 * Clone and install:
 
 ```bash
-git clone git@github.com:sc2pte/db_migration_tool.git
+git clone git@github.com:sc2pte/db_migration_v1_v2.git
 cd db_migration_tool
 npm install
 ```
