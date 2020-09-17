@@ -13,7 +13,7 @@ Node.js script for upgrading user configuration objects to version 2.
 
 ```bash
 git clone git@github.com:sc2pte/db_migration_v1_v2.git
-cd db_migration_tool
+cd db_migration_v1_v2
 npm install
 ```
 
